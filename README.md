@@ -19,7 +19,7 @@ Contributors: Hyojin Song, Aaron Gillmor, Gurveer Gill, Courtney Hall
 
 ## ⚡Main Features
 
-Here are just a few of the things that mosaicMPI does well:
+Here are just a few of the things that `mosaicMPI` does well:
 
 - Identifies interpretable, non-negative programs at multiple resolutions
 - Mosaic integration does not require subsetting features/genes to
@@ -27,12 +27,12 @@ Here are just a few of the things that mosaicMPI does well:
 - Multi-omics integration without shared sample IDs
 - Incremental integration (adding datasets one at a time) since
   deconvolution is performed independently on each dataset
-- High performance integration of of datasets with mismatched features
+- High performance integration of datasets with mismatched features
   (eg. Microarray, RNA-Seq, Proteomics) or sparsity (eg. single-cell vs. bulk)
 - Metadata transfer across datasets
 
-mosaicMPI has two interfaces:
-- command-line interface with a standardized workflow for rapid data exploration and integration
+`mosaicMPI` has two interfaces:
+- command-line interface (CLI) with a standardized workflow for rapid data exploration and integration
 - python API for greatest flexibility and extensibility
 
 ## 🔧 Install
@@ -45,12 +45,15 @@ mosaicMPI has two interfaces:
 ### ✨ Latest Release
 Install the package with `conda`:
 ```bash
-# create an environment called mosaic and install
+# if using a fresh conda install
+conda init
+
+# create an environment called 'mosaicenv' and install
 conda create -n mosaicenv -c conda-forge mosaicmpi
 conda activate mosaicenv
 ```
 
-For ssGSEA analysis, you will also need to install GSEApy into the same environment.
+For single-sample GSEA (ssGSEA) analysis, you will also need to install [`GSEApy`](https://github.com/zqfang/GSEApy) into the same environment:
 
 ```bash
 # if you have conda (MacOS_x86-64 and Linux only)
@@ -65,4 +68,4 @@ Read the [documentation](https://mosaicmpi.readthedocs.io/).
 
 ## 💭 Getting Help
 
-For questions arising during use of mosaicMPI, create and browse issues in the [GitHub "issues" tab](https://github.com/MorrissyLab/mosaicMPI/issues).
+For questions arising during use of `mosaicMPI`, create and browse issues in the [GitHub "issues" tab](https://github.com/MorrissyLab/mosaicMPI/issues).
